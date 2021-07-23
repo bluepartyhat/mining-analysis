@@ -51,4 +51,4 @@ BC1YLiMvswR9N2fsGsGqHYyoq6w1iPUm7oFRy82UB2aH1FRtTA5HgMG,7
 | blocks_to_collect   | Specifies the number of blocks to collect moving backwards from starting_block_height. By default 1,000 blocks.       |
 | output_csv_file | An optional csv output file where sorted data on public key -> # of blocks mined is stored. If the flag is not set, the data will only be outputed to the console. |
 | node | The node from which to collect information on the blockchain. By default https://api.bitclout.com. |
-| delay_milliseconds | The delay in milliseconds to wait between failed requests. By default 1,000ms. |
+| delay_milliseconds | The delay in milliseconds to wait between failed requests. By default 1,500ms. |

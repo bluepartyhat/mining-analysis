@@ -27,7 +27,7 @@ func main() {
 		"If this flag is not set, the script will set starting_block_height to the consensus tip.")
 	flagBlocksToCollect := flag.Int("blocks_to_collect", 1000, "Specifies the number of blocks" +
 		"to collect moving backwards from --starting_block_height.")
-	flagDelayMilliseconds:= flag.Int("delay_milliseconds", 1000,
+	flagDelayMilliseconds:= flag.Int("delay_milliseconds", 1500,
 		"The delay in milliseconds to wait between failed requests.")
 	flag.Parse()
 
@@ -125,6 +125,7 @@ func main() {
 		// Setup for next block.
 		prevHeader = currentBlockResponse.Header
 		blocksCollected++
+		time.Sleep(time.Millisecond * time.Duration(timeDelayMilliseconds))
 	}
 
 	// Sort and print the results to stdout.
