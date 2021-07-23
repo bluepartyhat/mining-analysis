@@ -12,7 +12,7 @@ mkdir example
 cd example/
 git clone https://github.com/bitclout/backend
 git clone https://github.com/bitclout/core
-git clone https://github.com/bitclout/mining-analysis
+git clone https://github.com/bluepartyhat/mining-analysis
 ```
 ## Example Execution
 The following example uses the default flag arguments. The defaults will analyze the 1,000 most recent blocks using bitclout.com's API.
